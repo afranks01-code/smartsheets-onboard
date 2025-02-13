@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Onboarding</title>
+</head>
+<body>
+    <h2>Client Onboarding</h2>
+    <form action="https://4uytsn5xa9.execute-api.us-east-2.amazonaws.com/default/ps-clientOnboarding" method="post">
+        <label for="client">Client Name:</label><br>
+        <input type="text" id="client" name="client" required><br><br>
+		
+		<label for="project">Project Code:</label><br>
+        <input type="text" id="project" name="project" required><br><br>
+               
+        <label for="clockify">Create Clockify Project?</label><br>
+        <select id="clockify" name="clockify" required>
+            <option value="True">Yes</option>
+            <option value="False">No</option>
+        </select><br><br>
+		
+		<label for="smartsheets">Create Smartsheets?</label><br>
+        <select id="smartsheets" name="smartsheets" required>
+            <option value="True">Yes</option>
+            <option value="False">No</option>
+        </select><br><br>
+		
+		<label for="projtype">Project Type:</label><br>
+        <select id="projtype" name="projtype" required>
+            <option value="ONBOARD">Client Onboarding</option>
+            <option value="DECOM">Client Decommissioning</option>
+        </select><br><br>
+		
+		<label for="pmgr">Project Manager:</label><br>
+        <select id="pmgr" name="pmgr" required>
+            <option value="5e976896bb457c10356071a2">Kim Chiu</option>
+            <option value="6050fd199d1fbf13678fe224">Negar Samenirad</option>
+            <option value="6050fd199d1fbf13678fe225">Corina Beitz</option>
+			<option value="603ec7d1c9f498644ed91d1e">Jonathan Epp</option>
+        </select><br><br>
+		
+		<label for="devresource">Dev Resource:</label><br>
+        <select id="devresource" name="devresource" required>
+            <option value="6054ca5816d7fa0014bd6b9e">Robert Kim</option>
+			<option value="6054ca5816d7fa0014bd6b9d">Di Wang</option>
+			<option value="6054ca31c70e5d7198483db6">Andy Franks</option>
+			<option value="6054c67016d7fa0014bd3a53">Akhtar Hussain</option>
+            <option value="6054ca5816d7fa0014bd6b9f">Dennis Candelaria</option>
+        </select><br><br>
+        
+		<label for="qaresource">QA Resource:</label><br>
+        <select id="qaresource" name="qaresource" required>
+		<option value="6054ca5816d7fa0014bd6b9d">Di Wang</option>
+		<option value="6050fd199d1fbf13678fe224">Negar Samenirad</option>
+		</select><br><br>
+	
+        <label for="date">Smartsheets Project Execution (Start) Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+                
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
